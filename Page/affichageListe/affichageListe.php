@@ -9,7 +9,7 @@
     <head>
         <title>KARCHER</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./Blog.css" />
+        <link rel="stylesheet" type="text/css" href="./affichageListe.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
@@ -21,7 +21,7 @@
 
         <br> <br> <br> <br>
 
-        <p id="center">AFFICHAGE LIST</p>
+        <p id="center">AFFICHAGE LISTE</p>
 
     </body>
 </html>
