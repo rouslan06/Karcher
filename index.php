@@ -23,10 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $dbh = new PDO("mysql:dbname=Karcher;host=127.0.0.1;port=8889", "root", "root");
  
-    $query = $dbh->prepare('SELECT product.model, product.brand FROM product WHERE model = ? AND brand = ? ');
-   
-    $query->execute([$model,$brand]);
-    $results = $query->fetchAll();
 
 }
 ?>
