@@ -1,0 +1,27 @@
+#menu {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 410px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu {
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 30px;
+    background-color: rgb(196, 196, 196);
+}
+
+.menu:hover {
+    background-color: rgb(26, 155, 194);
+}
+
+#center {
+    text-align: center;
+}
