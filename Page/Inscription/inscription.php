@@ -2,6 +2,7 @@
 
 <?php
 require __DIR__ . "/../../Component/menu2.php";
+
 ?>
 
 <html>
@@ -20,13 +21,12 @@ require __DIR__ . "/../../Component/menu2.php";
     <?php menu2(); ?>
 
     <section>
-        <form action="../../index.php" method="POST">
-            <input type="text" name="lastname" placeholder="nom" required />
-            <input type="text" name="firstname" placeholder="prenom" required />
+        <form action="../Inscription/verif-inscription" method="post">
+            <input type="text" name="nom" placeholder="nom" required />
+            <input type="text" name="prenom" placeholder="prenom" required />
             <input type="email" name="email" placeholder="email" required />
             <input type="password" name="password" placeholder="mot de passe" required />
-            <input type="password" name="confirm" placeholder="confirmer votre mot de passe" required />
-            <button>Valider</button>
+            <button type="submit" >Valider</button>
         </form>
     </section>
 
