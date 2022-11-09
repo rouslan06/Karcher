@@ -18,6 +18,7 @@
         <?php
             menu();
         ?>
+<!-- création formulaire pour déposer une  annonce-->
 
         <h1>Déposer une annonce</h1>
         <section class="section-products">
