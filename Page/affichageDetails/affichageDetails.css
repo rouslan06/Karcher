@@ -78,6 +78,11 @@
     margin-top: 10px;
 }
 
+#prix2 {
+    margin-top: 10px;
+    width: 100px;
+}
+
 #bloc {
     border: 2px solid black;
     margin-bottom: 10px;

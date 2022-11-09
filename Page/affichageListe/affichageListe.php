@@ -2,6 +2,7 @@
 
 <?php
     require __DIR__."/../../Component/menu2.php";
+    require __DIR__."/../../classes/Car.class.php";
 ?>
 
 <html>

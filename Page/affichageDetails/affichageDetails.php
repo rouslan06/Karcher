@@ -2,7 +2,6 @@
 
 <?php
     require __DIR__."/../../Component/menu2.php";
-    //require __DIR__."/../affichageListe/affichageListe.php";
 ?>
 
 <html>
@@ -36,6 +35,16 @@
                     WHERE id=$id
                 ");
 
+                if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+
+                    $newPrice = $_POST["price"];
+            
+                    $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
+            
+                    $query = $dbh->prepare("SELECT price FROM `product` WHERE  price = :price");
+                    $query->execute([$newPrice]);
+                }
+
                 $result = $auteur->fetchAll(PDO::FETCH_ASSOC);
 
                 foreach ($result as $key => $voiture) {
@@ -44,8 +53,8 @@
                     echo "<div id='affichage2'>";
 
                     echo "<img src=" . $voiture['image'] . "> <br> <br>";
-                    echo "Modèle : " . $voiture['model'] . "<br> <br>";
                     echo "Marque : " . $voiture['brand'] . "<br> <br>";
+                    echo "Modèle : " . $voiture['model'] . "<br> <br>";
                     echo "Années : " . $voiture['year'] . "<br> <br>";
 
                     echo "<div id='bloc'>";
@@ -57,7 +66,14 @@
 
                     echo "<div id='encherir'>";
                     echo "ENCHERIR";
-                    echo "<input type='number' id='prix' placeholder='Votre prix'>" . "</input>";
+                    /*******************************************************/
+
+                    echo "<form action='' method='post'>";
+                    echo "<input name='price' type='number' id='prix2' placeholder='Votre prix'>" . "</input>";
+                    echo "<input type='submit' value='VALIDER'/>";
+                    echo "</form>";
+
+                    /*******************************************************/
                     echo "</div>";
 
                     echo "</div>";
