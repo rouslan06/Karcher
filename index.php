@@ -19,9 +19,24 @@
             menu();
         ?>
 
-        <br> <br> <br> <br>
+        <h1>Déposer une annonce</h1>
+        <section class="section-products">
+            <div class="container">
+            <div class="row justify-content-center text-center">
+                <form action="product.php" method="POST">
+                <input type="text" name="image" placeholder="url de l'image" required />
+                <input type="text" name="model" placeholder="model" required />
+                <input type="text" name="brand" placeholder="brand" required />
+                <textarea name="description"></textarea>
+                <input type="text" name="year" placeholder="year" required />
+                <input type="date" name="time_limit" placeholder="time_limit" required />
+                <input type="text" name="price" placeholder="price" required />
+                <button type="submit">Déposer</button>
+                </form>
+            </div>
+            </div>
+        </section>
 
-        <p id="center">DEPOT</p>
 
     </body>
 </html>

@@ -24,7 +24,7 @@
 
         <section id="formulaire">
             <?php
-                $id = htmlspecialchars($_GET["id"]);
+                $id = htmlspecialchars($_POST["id"]);
 
                 $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
 
