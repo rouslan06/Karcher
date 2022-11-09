@@ -23,10 +23,6 @@
             <form id='affichageList' action='./Page/affichageListe/affichageListe.php' method='post'>
                 <input class='boutonMenu' type='submit' value='Affichage liste' />
             </form>
-    
-            <form id='affichageDetails' action='./Page/affichageDetails/affichageDetails.php' method='post'>
-                <input class='boutonMenu' type='submit' value='Affichage détails' />
-            </form>
 
             <form id='inscription' action='./Page/inscription/inscription.php' method='post'>
                 <input class='boutonMenu' type='submit' value='Inscription' />

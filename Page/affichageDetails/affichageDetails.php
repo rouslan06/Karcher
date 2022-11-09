@@ -24,7 +24,7 @@
 
         <section id="formulaire">
             <?php
-                $id = htmlspecialchars($_POST["id"]);
+                $id = htmlspecialchars($_GET["id"]);
 
                 $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
 
@@ -43,14 +43,29 @@
                     echo "<section id='laura2'>";
                     echo "<div id='affichage2'>";
 
-                    echo "<p name='id' value='" . $key . " '> ";
                     echo "<img src=" . $voiture['image'] . "> <br> <br>";
                     echo "Modèle : " . $voiture['model'] . "<br> <br>";
                     echo "Marque : " . $voiture['brand'] . "<br> <br>";
                     echo "Années : " . $voiture['year'] . "<br> <br>";
-                    echo "Prix : " . $voiture['price'] . "<br> <br>";
-                    echo "Description : " . '<br> <br>' . $voiture['description'] . "<br> <br>";
+
+                    echo "<div id='bloc'>";
+
+                    echo "<div id='enchere'>";
+                    echo "ENCHERE ACTUEL";
+                    echo "<p id='prix'>" . $voiture['price'] . " €" . "</p>";
+                    echo "</div>";
+
+                    echo "<div id='encherir'>";
+                    echo "ENCHERIR";
+                    echo "<input type='number' id='prix' placeholder='Votre prix'>" . "</input>";
+                    echo "</div>";
+
+                    echo "</div>";
+
+                    echo "DESCRIPTION" . '<br> <br>' . $voiture['description'] . "<br> <br> <br>";
     
+                    echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageListe/affichageListe.php'>RETOUR</a>";
+
                     echo "</div>";
                     echo "</section";
 

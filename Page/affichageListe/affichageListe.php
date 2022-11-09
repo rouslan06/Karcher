@@ -39,16 +39,13 @@
 
                     echo "<section id='laura'>";
                     echo "<div id='affichage'>";
-                    echo "<form id='formulaire' action='../affichageDetails/affichageDetails.php' method='post'/>";
 
-                    echo "<p name='id' value='" . $key . " '> ";
                     echo "<img src=" . $voiture['image'] . "> <br> <br>";
                     echo "Marque : " . $voiture['brand'] . "<br> <br>";
-                    echo "Prix : " . $voiture['price'] . "<br> <br>";
+                    echo "Prix : " . $voiture['price'] . "<br> <br> <br>";
           
-                    echo "<input id='voirPlus' type='submit' value='VOIR PLUS' />";
+                    echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageDetails/affichageDetails.php?id=$key'>VOIR PLUS</a>";
 
-                    echo "</form>";
                     echo "</div>";
                     echo "</section";
 
