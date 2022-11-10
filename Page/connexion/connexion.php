@@ -17,13 +17,14 @@
     <?php menu2(); ?>
     <section>
         <h2>Connexion</h2>
-            <form action="verification-connexion" method="POST">
+        <!--  -->
+            <form action="sessions.php" method="POST">
                 <input type="email" name="email" placeholder="email" required />
                 <input type="password" name="password" placeholder="mot de passe" required />
-                <button>Valider</button>
+                <button name="sub" >Valider</button>
             </form>
     </section>
 </body>
-
+<!--  -->
 </html>
 

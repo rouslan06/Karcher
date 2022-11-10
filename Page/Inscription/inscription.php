@@ -21,6 +21,12 @@ require __DIR__ . "/../../Component/menu2.php";
     <?php menu2(); ?>
 
     <section>
+        <?php 
+        if(@$_GET['Empty'] == true)
+        { ?> 
+        <div><?php echo $_GET['Empty']?></div>
+        <?php 
+        } ?>
         <form action="../Inscription/verif-inscription" method="post">
             <input type="text" name="nom" placeholder="nom" required />
             <input type="text" name="prenom" placeholder="prenom" required />

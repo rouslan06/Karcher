@@ -2,12 +2,7 @@
 
 //Création du système de connection à ma base de donnée
 
-$DATABASE_HOST    = "localhost";
-$DATABASE_USER   = "root";
-$DATABASE_PASS   = "";
-$DATABASE_NAME  = "karcher";
-
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+$con = new PDO("mysql:dbname=karcher;host=localhost", "root", "" );
 
 // Si la connection entre la base de donnée et le site n'est pas possible (Ce message apparrait)
 
@@ -27,14 +22,17 @@ if (!isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['password'])
 
             if($stmt = $con->prepare('INSERT INTO users (firstname, lastname, email, password) VALUES (?, ?, ?, ?)')) {
                 $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-                $stmt->bind_param('ssss', $_POST['prenom'], $_POST['nom'], $_POST['email'], $password);
+                $stmt->bindValue(1, $_POST['prenom'], PDO::PARAM_STR);
+                $stmt->bindValue(2, $_POST['nom'], PDO::PARAM_STR);
+                $stmt->bindValue(3, $_POST['email'], PDO::PARAM_STR);
+                $stmt->bindValue(4, $password, PDO::PARAM_STR);
                 $stmt->execute();
-                echo 'Enregistré avec succès';
+                header('location: inscription.php?Empty=Inscription réussi, vous pouvez vous connecter.');
             } else {
-                echo 'Une erreur est survenue';
+                header('location: inscription.php?Empty=Une erreur est survenue !');;
             };
 
-        $stmt->close();
+        $stmt = null;
 
-    $con->close()
+    $con = null
 ?>
