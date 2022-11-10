@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 
-<?php
-require __DIR__ . "/../../Component/menu2.php";
-
-?>
 
 <html>
 
@@ -11,30 +7,40 @@ require __DIR__ . "/../../Component/menu2.php";
 
     <title>KARCHER</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./inscription.css" />
+    <link rel="stylesheet" type="text/css" href="inscription.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
 </head>
 
 <body>
 
-    <?php menu2(); ?>
-
-    <section>
-        <?php 
-        if(@$_GET['Empty'] == true)
-        { ?> 
-        <div><?php echo $_GET['Empty']?></div>
-        <?php 
-        } ?>
-        <form action="../Inscription/verif-inscription" method="post">
-            <input type="text" name="nom" placeholder="nom" required />
-            <input type="text" name="prenom" placeholder="prenom" required />
-            <input type="email" name="email" placeholder="email" required />
-            <input type="password" name="password" placeholder="mot de passe" required />
-            <button type="submit" >Valider</button>
-        </form>
-    </section>
+<?php include __DIR__ . "../../../Component/menu/menu.php"?>
+    <div class="container">
+        <div class="left">
+            <div class="login">Connexion</div>
+            <div class="eula">En vous connectant, vous acceptez les termes ridiculement longs que vous n'avez même pas pris la peine de lire.</div>
+        </div>
+        <div class="right">
+            <div class="form">
+                <form action="../Inscription/verif-inscription" method="post">
+                    <?php
+                    if (@$_GET['Empty'] == true) { ?>
+                        <div class="succes"><?php echo $_GET['Empty'] ?></div>
+                    <?php
+                    } ?>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" class="input-login" name="nom" placeholder="Boissy" required />
+                    <label for="prenom">Prenom</label>
+                    <input type="text" id="prenom" class="input-login" name="prenom" placeholder="Anthony" required />
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-login" name="email" placeholder="Exemple@gmail.com" required />
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" class="input-login" name="password" placeholder="********" required />
+                    <button name="sub" type="submit" id="btn-submit" value="Submit">Valider</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 

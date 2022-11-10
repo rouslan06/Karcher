@@ -1,9 +1,5 @@
 <!doctype html>
 
-<?php
-    require __DIR__."/../../Component/menu2.php";
-?>
-
 <html>
 
     <head>
@@ -15,17 +11,13 @@
 
     <body>
 
-        <?php
-            menu2();
-        ?>
-
         <p id="center">AFFICHAGE DETAILS</p>
 
         <section id="formulaire">
             <?php
                 $id = htmlspecialchars($_GET["id"]);
 
-                $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
+                $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1", "root", "");
 
                 $dbh->beginTransaction();
 

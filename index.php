@@ -1,9 +1,5 @@
 <!doctype html>
 
-<?php
-    require_once __DIR__."/Component/menu.php";
-?>
-
 <html>
 
     <head>
@@ -15,9 +11,7 @@
 
     <body>
 
-        <?php
-            menu();
-        ?>
+    <?php include __DIR__ . "/Component/menu/menu.php"?>
 <!-- création formulaire pour déposer une  annonce-->
 
         

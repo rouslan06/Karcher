@@ -1,7 +1,6 @@
 <!doctype html>
 
 <?php
-    require __DIR__."/../../Component/menu2.php";
     require __DIR__."/../../classes/Car.class.php";
 ?>
 
@@ -16,16 +15,14 @@
 
     <body>
 
-        <?php
-            menu2();
-        ?>
+    <?php include __DIR__ . "../../../Component/menu/menu.php"?>
 
         <p id="center">AFFICHAGE LISTE</p>
 
         <section id="details">
 
             <?php
-                $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
+                $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1", "root", "");
                 
                 $dbh->beginTransaction();
 
@@ -45,7 +42,7 @@
                     echo "Marque : " . $voiture['brand'] . "<br> <br>";
                     echo "Prix : " . $voiture['price'] . "<br> <br> <br>";
           
-                    echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageDetails/affichageDetails.php?id=$key'>VOIR PLUS</a>";
+                    echo "<a id='lien' href='http://localhost/karcher/Page/affichageDetails/affichageDetails.php?id=$key'>VOIR PLUS</a>";
 
                     echo "</div>";
                     echo "</section";
