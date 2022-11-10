@@ -34,17 +34,7 @@
                     FROM product 
                     WHERE id=$id
                 ");
-
-                if ($_SERVER["REQUEST_METHOD"] == "POST") { 
-
-                    $newPrice = $_POST["price"];
             
-                    $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
-            
-                    $query = $dbh->prepare("SELECT price FROM `product` WHERE  price = :price");
-                    $query->execute([$newPrice]);
-                }
-
                 $result = $auteur->fetchAll(PDO::FETCH_ASSOC);
 
                 foreach ($result as $key => $voiture) {
@@ -68,7 +58,9 @@
                     echo "ENCHERIR";
                     /*******************************************************/
 
-                    echo "<form action='' method='post'>";
+                    //echo "<a id='lien2' href='http://localhost:8888/karcher/Page/affichageDetails/nouveauPrix.php?id=$key&price=$nouvauPrix'>Valider</a>";
+
+                    echo "<form action='http://localhost:8888/karcher/Page/affichageDetails/nouveauPrix.php?id=$key' method='post'>";
                     echo "<input name='price' type='number' id='prix2' placeholder='Votre prix'>" . "</input>";
                     echo "<input type='submit' value='VALIDER'/>";
                     echo "</form>";
