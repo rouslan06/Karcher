@@ -1,5 +1,7 @@
 <?php
 
+// Création de la class parent avec tous les attributs requis en protected //
+
 class Product{
 
     protected string $image;
@@ -22,7 +24,8 @@ class Product{
     }
 
 
-    
+    // récupération des attributs  protected //
+
     public function getImage()
     {
       return $this->image;
@@ -108,10 +111,6 @@ class Product{
         $this->price = $price;
       }
     }
-
-
-
-
 
 
 

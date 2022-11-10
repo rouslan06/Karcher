@@ -18,9 +18,11 @@
         <?php
             menu();
         ?>
+<!-- création formulaire pour déposer une  annonce-->
 
-        <h1>Déposer une annonce</h1>
-        <section class="section-products">
+        
+        <section class="section-annonce">
+            <h1>Déposer une annonce</h1>
             <div class="container">
             <div class="row justify-content-center text-center">
                 <form action="product.php" method="POST">

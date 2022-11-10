@@ -11,7 +11,7 @@
 }
 
 .boutonMenu {
-    width: 110px;
+    width: 135px;
     border: 1px solid black;
     border-radius: 3px;
     height: 30px;
@@ -25,3 +25,78 @@
 #center {
     text-align: center;
 }
+
+#laura2 {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#affichage2 {
+    height: 630px;
+    width: 560px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    padding-top: 10px;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#lien:hover {
+    background-color: green;
+}
+
+#lien {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#enchere {
+    font-weight: bold;
+    border-right: 2px solid black;
+    width: 200px;
+    margin-left: 10px;
+    padding-top: 10px;
+    height: 65px;
+}
+
+#prix {
+    color: black;
+    margin-top: 10px;
+}
+
+#prix2 {
+    margin-top: 10px;
+    width: 100px;
+}
+
+#bloc {
+    border: 2px solid black;
+    margin-bottom: 10px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#encherir {
+    font-weight: bold;
+    width: 200px;
+    padding-top: 10px;
+    height: 65px;
+    padding-left: 5px;
+}
+

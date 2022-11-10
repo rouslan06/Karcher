@@ -39,5 +39,3 @@ if (isset($_POST['sub'])) {
     echo "mot de passe incorrect !";
   }
 }
-
-?>

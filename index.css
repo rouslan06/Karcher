@@ -11,7 +11,7 @@
 }
 
 .boutonMenu {
-    width: 110px;
+    width: 135px;
     border: 1px solid black;
     border-radius: 3px;
     height: 30px;
@@ -25,3 +25,4 @@
 #center {
     text-align: center;
 }
+
