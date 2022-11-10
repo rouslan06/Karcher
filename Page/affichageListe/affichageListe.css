@@ -11,7 +11,7 @@
 }
 
 .boutonMenu {
-    width: 110px;
+    width: 135px;
     border: 1px solid black;
     border-radius: 3px;
     height: 30px;
@@ -24,4 +24,46 @@
 
 #center {
     text-align: center;
+}
+
+#laura {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#affichage {
+    height: 330px;
+    width: 300px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    background-color: grey;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+#affichage:hover {
+    background-color: rgb(95, 174, 231);
+}
+
+#lien:hover {
+    background-color: green;
+}
+
+#lien {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    padding-top: 10px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
