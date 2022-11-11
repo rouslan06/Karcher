@@ -11,6 +11,8 @@
 
     <body>
 
+        <?php function menu() { ?>
+    
         <div id='menu'>
             <form id='depot' method='post' action="../../../karcher/index.php">
                 <input class='boutonMenu' type='submit' value='Depôt' />
@@ -32,6 +34,8 @@
         <h2 id='titrePrincipale' style='text-align:center;' >
             KARCHER
         </h2>
+
+        <?php } ?>
         
     </body>
 </html>

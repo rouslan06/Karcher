@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 
+<?php
+    include __DIR__ . "../../../Component/menu/menu.php";
+?>
+
 
 <html>
 
@@ -14,7 +18,10 @@
 
 <body>
 
-<?php include __DIR__ . "../../../Component/menu/menu.php"?>
+    <?php
+        menu();
+    ?>
+
     <div class="container">
         <div class="left">
             <div class="login">Connexion</div>

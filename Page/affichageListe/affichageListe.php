@@ -2,6 +2,7 @@
 
 <?php
     require __DIR__."/../../classes/Car.class.php";
+    include __DIR__ . "/../../Component/menu/menu.php";
 ?>
 
 <html>
@@ -15,10 +16,10 @@
 
     <body>
 
-    <?php include __DIR__ . "../../../Component/menu/menu.php"?>
-
-        
-
+        <?php
+            menu();
+        ?>
+    
         <section id="details">
 
             <?php

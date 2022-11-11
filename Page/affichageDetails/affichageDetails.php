@@ -1,5 +1,9 @@
 <!doctype html>
 
+<?php
+    include __DIR__ . "/../../Component/menu/menu.php";
+?>
+
 <html>
 
     <head>
@@ -10,6 +14,10 @@
     </head>
 
     <body>
+
+        <?php
+            menu();
+        ?>
 
         <p id="center">AFFICHAGE DETAILS</p>
 
