@@ -2,9 +2,7 @@
 
     try {
         $id = htmlspecialchars($_GET["id"]);
-        $bla = htmlspecialchars($_GET["price"]);
-
-        $prix = htmlspecialchars($_POST["valeurInput"]);
+        $prix = htmlspecialchars($_POST["Input"]);
 
         $conn = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
         // set the PDO error mode to exception
@@ -19,12 +17,10 @@
         // Prepare statement
         $stmt = $conn->prepare($sql);
 
-        /*
-        if ( $prix < $bla ) {
-            echo "La valeur ne pet être inférieur !";
-            header("refresh:5;url=http://localhost:8888/karcher/Page/affichageListe/affichageListe.php");
+        if ( $prix == "" ) {
+            header('location: http://localhost:8888/karcher/Page/affichageListe/affichageListe.php');
+            //header("refresh:1;url=http://localhost:8888/karcher/Page/affichageListe/affichageListe.php");
         }
-        */
 
         // execute the query
         $stmt->execute();

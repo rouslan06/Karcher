@@ -37,7 +37,7 @@
             
                 $result = $auteur->fetchAll(PDO::FETCH_ASSOC);
 
-                foreach ($result as $key => $voiture) {
+                foreach ($result as $voiture) {
 
                     echo "<section id='laura2'>";
                     echo "<div id='affichage2'>";
@@ -60,12 +60,12 @@
 
                     // condition : egal ou sup+1 car doit etre forcément supérieur au montant de l'enchère
                     $bla = $voiture['price'];
-                    $selen = $bla + 1;
+                    $valeurSup = $bla + 1;
 
                     //echo "<a id='lien2' href='http://localhost:8888/karcher/Page/affichageDetails/nouveauPrix.php?id=$key&price=$nouvauPrix'>Valider</a>";
 
-                    echo "<form action='http://localhost:8888/karcher/Page/affichageDetails/nouveauPrix.php?id=$key' method='post'>";
-                    echo "<input name='valeurInput' min=$selen type='number' id='prix2' placeholder='Votre prix'>" . "</input>";
+                    echo "<form action='http://localhost:8888/karcher/Page/affichageDetails/nouveauPrix.php?id=$id' method='post'>";
+                    echo "<input name='Input' min=$valeurSup type='number' id='prix2' placeholder='Votre prix'>" . "</input>";
                     echo "<input type='submit' value='VALIDER'/>";
                     echo "</form>";
 
