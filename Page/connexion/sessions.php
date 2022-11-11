@@ -20,7 +20,6 @@ if (isset($_POST['sub'])) {
     die('query Failed' . mysqli_error($con));
   }
  
-  var_dump(password_verify($password, $user_password));
   while ($row = mysqli_fetch_array($users)) {
     var_dump($row);
     $user_id = $row['id'];
