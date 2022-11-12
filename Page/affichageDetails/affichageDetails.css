@@ -40,28 +40,33 @@
     margin-right: auto;
     border: 2px solid black;
     padding-top: 10px;
-    background-color: grey;
-    border-radius: 5px;
+    background: #dcdce1;
     padding: 10px;
     padding-bottom: 40px;
 }
 
 #lien:hover {
-    background-color: green;
+    color: #d0d0d2;
 }
 
 #lien {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
     border: 2px solid black;
     padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: grey;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
+
+    color: #707075;
+    transition: color 300ms;
+    font-size: 19px;
+    font-weight: bold;
+}
+  
+#lien:focus {
+    color: #f2f2f2;
 }
 
 #enchere {
@@ -73,12 +78,14 @@
     height: 65px;
 }
 
-#prix {
+#derniereOffre {
     color: black;
     margin-top: 10px;
+    background: #474a59;
+    color: white;
 }
 
-#prix2 {
+#inputPrix {
     margin-top: 10px;
     width: 100px;
 }
@@ -90,6 +97,8 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    background: #474a59;
+    color: white;
 }
 
 #encherir {
@@ -103,4 +112,8 @@
 img {
     width: 280px;
     height: 160px;
+}
+
+#btnEnvoyer:hover {
+    background-color: green;
 }
