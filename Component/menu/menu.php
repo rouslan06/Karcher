@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start()?>
 
 <!doctype html>
 
@@ -41,6 +41,9 @@
             <form id='connexion' action='../../../karcher/Page/connexion/connexion.php' method='post'>
                 <input class='boutonMenu' type='submit' value='Connexion' />
             </form>
+                
+            <?php } ?>
+
         </div>
 
         <?php } ?>
