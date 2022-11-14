@@ -1,10 +1,9 @@
-<?php session_start(); ?>
-
 <!doctype html>
 
 <?php
     include __DIR__ . "/Component/menu/menu.php";
 ?>
+
 <html>
 
     <head>
@@ -58,7 +57,7 @@
                             </div>
                             <div> 
                             <label for="price">Price</label>
-                            <input type="text" name="price" placeholder="price" required />
+                            <input id='price' type="text" name="price" placeholder="price" required />
                             </div> 
                         </div>
                         <div class="boutonSubmit"><button type="submit" id="submit">Déposer</button></div>

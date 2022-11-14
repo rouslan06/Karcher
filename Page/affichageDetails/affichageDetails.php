@@ -17,7 +17,7 @@
 
     <body>
 
-        <?php
+        <?ph-=
             menu();
         ?>
 

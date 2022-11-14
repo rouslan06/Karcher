@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 
 <?php
@@ -29,7 +31,7 @@
         </div>
         <div class="right">
             <div class="form">
-                <form action="../Inscription/verif-inscription" method="post">
+                <form action="../Inscription/verif-inscription.php" method="post">
                     <?php
                     if (@$_GET['Empty'] == true) { ?>
                         <div class="succes"><?php echo $_GET['Empty'] ?></div>

@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!doctype html>
 
 <?php
@@ -25,7 +23,7 @@
         <section id="details">
 
             <?php
-                $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1", "root", "");
+                $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
                 
                 $dbh->beginTransaction();
 
