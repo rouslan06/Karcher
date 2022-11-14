@@ -50,11 +50,11 @@ body {
   background: #e2e2e5;
   display: flex;
   flex-direction: column;
-  height: calc(80% - 40px);
-  position: absolute;
   place-content: center;
-  width: calc(100% - 40px);
-  
+  width: calc(70% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
 }
 @media (max-width: 767px) {
   .page {
@@ -95,7 +95,7 @@ body {
   font-size: 35px;
   text-align: justify;
   font-weight: 900;
-  margin: 50px 40px 40px;
+  margin: -50px 40px 40px;
 }
 .textunder {
   color: #999;
@@ -121,11 +121,12 @@ body {
 
 .form {
   margin: 40px;
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 500px;
 }
+
 label {
   color:  #c2c2c5;
   display: block;
@@ -134,6 +135,7 @@ label {
   margin-top: 20px;
   margin-bottom: 5px;
 }
+
 input {
   background: transparent;
   border: 0;
@@ -144,6 +146,7 @@ input {
   outline: none !important;
   width: 100%;
 }
+
 input::-moz-focus-inner { 
   border: 0; 
 }
@@ -151,30 +154,32 @@ input::-moz-focus-inner {
 .time_limit{
     color: #999;
 }
+
 input[type="date"]::-webkit-calendar-picker-indicator{
     color: #999;
 }
+
 .formLine1{
     display: flex;
-    width: 900px;
+    width: 700px;
     justify-content: space-between;
-    margin-left: 130px;
 }
+
 .formLine2{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 130px;
-
 }
+
 .formLine3{
     display: flex;
-    width: 900px;
+    width: 700px;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-left: 130px;
 }
+
 #submit {
   color: #707075;
   margin-top: 30px;
@@ -184,19 +189,24 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   font-size: 19px;
   font-weight: bold;
 }
+
 #submit:focus {
   color: #f2f2f2;
 }
+
 #submit:active {
   color: #d0d0d2;
 }
 
 .boutonSubmit{
-    margin-left: 96%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 textarea{
     height: 85px;
     width: 400px;
-    margin-left: 350px;
+    margin-left: -60px;
+    margin-top: 20px;
+    background-color: rgb(196, 196, 196);
 }
