@@ -175,7 +175,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 
 .formLine3{
     display: flex;
-    width: 700px;
+    width: 650px;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -210,3 +210,4 @@ textarea{
     margin-top: 20px;
     background-color: rgb(196, 196, 196);
 }
+

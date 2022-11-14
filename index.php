@@ -57,7 +57,7 @@
                             </div>
                             <div> 
                             <label for="price">Price</label>
-                            <input type="text" name="price" placeholder="price" required />
+                            <input id='price' type="text" name="price" placeholder="price" required />
                             </div> 
                         </div>
                         <div class="boutonSubmit"><button type="submit" id="submit">Déposer</button></div>
