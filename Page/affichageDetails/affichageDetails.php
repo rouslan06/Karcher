@@ -1,5 +1,3 @@
-<?php session_start() ?>
-
 <!doctype html>
 
 <?php
@@ -17,7 +15,7 @@
 
     <body>
 
-        <?php
+        <?ph-=
             menu();
         ?>
 

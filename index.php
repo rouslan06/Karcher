@@ -1,10 +1,9 @@
-<?php session_start(); ?>
-
 <!doctype html>
 
 <?php
     include __DIR__ . "/Component/menu/menu.php";
 ?>
+
 <html>
 
     <head>
