@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 
 <html>
@@ -22,6 +24,16 @@
                 <input class='boutonMenu' type='submit' value='Affichage liste' />
             </form>
 
+        <?php if (array_key_exists('id', $_SESSION)) { ?>
+
+            <form id='deconnexion' action='../../../karcher/Page/deconnexion.php' method='post'>
+                <input class='boutonMenu' type='submit' value='Deconnexion' />
+            </form>
+
+                <?php echo $_SESSION['lastname'] ?>
+
+        <?php } else { ?>
+
             <form id='inscription' action='../../../karcher/Page/inscription/inscription.php' method='post'>
                 <input class='boutonMenu' type='submit' value='Inscription' />
             </form>
@@ -31,9 +43,7 @@
             </form>
         </div>
 
-        <h2 id='titrePrincipale' style='text-align:center;' >
-            KARCHER
-        </h2>
+        <?php } ?>
 
         <?php } ?>
         
