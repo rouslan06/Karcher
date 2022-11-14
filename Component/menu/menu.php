@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 
 <html>
@@ -25,12 +23,12 @@
             </form>
 
         <?php if (array_key_exists('id', $_SESSION)) { ?>
-
+            <div id="login">
             <form id='deconnexion' action='../../../karcher/Page/deconnexion.php' method='post'>
                 <input class='boutonMenu' type='submit' value='Deconnexion' />
             </form>
 
-                <?php echo $_SESSION['lastname'] ?>
+            <div><?php echo $_SESSION['lastname']?></div>
 
         <?php } else { ?>
 
@@ -41,6 +39,7 @@
             <form id='connexion' action='../../../karcher/Page/connexion/connexion.php' method='post'>
                 <input class='boutonMenu' type='submit' value='Connexion' />
             </form>
+            </div>
         </div>
 
         <?php } ?>

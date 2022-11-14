@@ -1,3 +1,5 @@
+<?php session_start()?>
+
 <!doctype html>
 
 <?php
@@ -23,7 +25,7 @@
             <?php
                 $id = htmlspecialchars($_GET["id"]);
 
-                $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
+                $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1", "root", "");
 
                 $dbh->beginTransaction();
 
@@ -60,7 +62,7 @@
                     $bla = $voiture['price'];
                     $valeurSup = $bla + 1;
 
-                    echo "<form action='http://localhost:8888/karcher/Page/affichageDetails/nouveauPrix.php?id=$id' method='post'>";
+                    echo "<form action='http://localhost/karcher/Page/affichageDetails/nouveauPrix.php?id=$id' method='post'>";
                     echo "<input name='Input' min=$valeurSup type='number' id='inputPrix' placeholder='Votre prix'>" . "</input>";
                     echo "<input id='btnEnvoyer' type='submit' value='VALIDER'/>";
                     echo "</form>";
@@ -71,7 +73,7 @@
 
                     echo "DESCRIPTION" . '<br> <br>' . $voiture['description'] . "<br> <br> <br>";
     
-                    echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageListe/affichageListe.php'>RETOUR</a>";
+                    echo "<a id='lien' href='http://localhost/karcher/Page/affichageListe/affichageListe.php'>RETOUR</a>";
 
                     echo "</div>";
                     echo "</section";
