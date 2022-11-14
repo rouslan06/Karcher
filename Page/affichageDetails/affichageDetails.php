@@ -1,9 +1,7 @@
-<?php session_start()?>
-
 <!doctype html>
 
 <?php
-    require __DIR__."/../../Component/menu/menu.php";
+    require __DIR__."../../../Component/menu/menu.php";
 ?>
 
 <html>

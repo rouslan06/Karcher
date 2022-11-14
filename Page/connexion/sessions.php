@@ -4,11 +4,10 @@ session_start();
 
 $DATABASE_HOST    = "localhost";
 $DATABASE_USER   = "root";
-$DATABASE_PASS   = "root";
-$DATABASE_PORT = 8889;
+$DATABASE_PASS   = "";
 $DATABASE_NAME  = "karcher";
 
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME, $DATABASE_PORT);
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
  
 if (isset($_POST['sub'])) {
   $email = $_POST['email'];

@@ -1,4 +1,4 @@
-<?php session_start()?>
+<?php session_start() ?>
 
 <!doctype html>
 
@@ -17,30 +17,31 @@
     
         <div id='menu'>
             <form id='depot' method='post' action="../../../karcher/index.php">
-                <input class='boutonMenu' type='submit' value='Depôt' />
+                <input class='button-menu' type='submit' value='Depôt' />
             </form>
 
-            <form id='affichageList' action='../../../karcher/Page/affichageListe/affichageListe.php ' method='post'>
-                <input class='boutonMenu' type='submit' value='Affichage liste' />
+            <form id='affich-List' action='../../../karcher/Page/affichageListe/affichageListe.php ' method='post'>
+                <input class='button-menu' type='submit' value='Affichage liste' />
             </form>
+
+            <section id="block">
 
         <?php if (array_key_exists('id', $_SESSION)) { ?>
-
             <form id='deconnexion' action='../../../karcher/Page/deconnexion.php' method='post'>
-                <input class='boutonMenu' type='submit' value='Deconnexion' />
+                <input class='button-menu' type='submit' value='Deconnexion' />
             </form>
 
-            <div><?php echo $_SESSION['lastname']?></div>
-
+            <div id="welcome"><?php echo "Bonjour " . $_SESSION['lastname']?></div>
             <?php } else { ?>
 
             <form id='inscription' action='../../../karcher/Page/inscription/inscription.php' method='post'>
-                <input class='boutonMenu' type='submit' value='Inscription' />
+                <input class='button-menu' type='submit' value='Inscription' />
             </form>
 
-            <form id='connexion' action='../../../karcher/Page/connexion/connexion.php' method='post'>
-                <input class='boutonMenu' type='submit' value='Connexion' />
+            <form id='login' action='../../../karcher/Page/connexion/connexion.php' method='post'>
+                <input class='button-menu' type='submit' value='Connexion' />
             </form>
+            </section>
                 
             <?php } ?>
 

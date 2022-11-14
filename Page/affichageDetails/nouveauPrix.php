@@ -18,7 +18,7 @@
         $stmt = $conn->prepare($sql);
 
         if ( $prix == "" ) {
-            header('location: http://localhost:8888/karcher/Page/affichageListe/affichageListe.php');
+            header('location: http://localhost/karcher/Page/affichageListe/affichageListe.php');
             //header("refresh:1;url=http://localhost:8888/karcher/Page/affichageListe/affichageListe.php");
         }
 
@@ -28,7 +28,7 @@
         // echo a message to say the UPDATE succeeded
         echo $stmt->rowCount() . " MAJ ok ! redirection";
 
-        header('location: http://localhost:8888/karcher/Page/affichageListe/affichageListe.php');
+        header('location: http://localhost/karcher/Page/affichageListe/affichageListe.php');
 
     } catch(PDOException $e) {
         echo $sql . "<br>" . $e->getMessage();

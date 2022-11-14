@@ -1,14 +1,10 @@
-
-
 <?php
 		// Initialisation de la session.
 		// Si vous utilisez un autre nom
 		// session_name("autrenom")
 		session_start();
-		 
 		// Détruit toutes les variables de session
 		$_SESSION = array('id');
-		 
 		// Si vous voulez détruire complètement la session, effacez également
 		// le cookie de session.
 		// Note : cela détruira la session et pas seulement les données de session !
@@ -19,11 +15,9 @@
 				$params["secure"], $params["httponly"]
 			);
 		}
-		 
 		// Finalement, on détruit la session.
 		session_destroy();
 		header('location: ../index.php')
 		?>
-		header('location: ./../index.php')
 
 ?>
