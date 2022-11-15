@@ -2,7 +2,7 @@
 
 //Création du système de connection à ma base de donnée
 
-$con = new PDO("mysql:dbname=karcher;host=localhost", "root", "" );
+$con = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
 
 // Si la connection entre la base de donnée et le site n'est pas possible (Ce message apparrait)
 
