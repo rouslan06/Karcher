@@ -49,7 +49,7 @@
                     echo "<div class='right'>";
                     echo "Marque : " . $voiture['brand'] . "<br> <br>";
                     echo "Dernière offre en date : " . $voiture['price'] . " €" . "<br> <br> <br> <br>";
-                    echo "<a id='lien' href='http://localhost/karcher/Page/affichageDetails/affichageDetails.php?id=$key'>VOIR PLUS</a> <br> <br> <br> <br>";
+                    echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageDetails/affichageDetails.php?id=$key'>VOIR PLUS</a> <br> <br> <br> <br>";
                     echo "L'enchère prendra fin le : " . $voiture['time_limit'];
                     echo "</div>";
 
