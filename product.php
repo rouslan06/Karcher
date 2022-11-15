@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
 // J'appelle ma BDD //
-    $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1", "root", "root");
+    $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
 
 // J'insère dans la BDD les données récupérées du formulaire  //
     $query = $dbh->prepare("INSERT INTO `product` (`image`, `model`, `brand`, `description`,`year`, `time_limit`, `price`) VALUE (?, ?, ?, ?, ?, ?, ?)");

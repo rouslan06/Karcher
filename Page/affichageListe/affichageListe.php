@@ -52,7 +52,7 @@
                     echo "Dernière offre en date : " . $voiture['price'] . " €" . "<br> <br> <br> <br>";
                     echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageDetails/affichageDetails.php?id=$key'>VOIR PLUS</a> <br> <br> <br>";
                     echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageListe/supprimerAnnonce.php?id=$key'>SUPPRIMER ANNONCE</a> <br> <br> <br>";
-                    echo "L'enchère prendra fin le : " . $voiture['time_limit'];
+                    echo "L'enchère prendra fin le : " . "<div id='timer'></div>";
                     echo "</div>";
 
                     echo "</div>";
@@ -61,5 +61,6 @@
                 }
             ?>
         </section>
+        <script src="timer.js"></script>
     </body>
 </html>
