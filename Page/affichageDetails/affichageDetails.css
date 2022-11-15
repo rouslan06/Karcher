@@ -6,24 +6,16 @@
     border-radius: 5px;
 }
 
-.button-menu {
-	background-color:#474a59;
-	border-radius:11px;
-	border:3px solid #000;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Courier New;
-	font-size:15px;
-	padding:0 20px;
-	text-decoration:none;
-}
-.button-menu:hover {
-	background-color:#1e2234;
-}
-.button-menu:active {
-	position:relative;
-	top:1px;
+.boutonMenu {
+    width: 135px;
+    border: 1px solid #2D2F36;
+    border-radius: 3px;
+    height: 30px;
+    background-color: rgb(196, 196, 196);
+    color: #2D2F36;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 #login {
@@ -148,4 +140,12 @@ body {
     font-family: 'Inter UI', sans-serif;
     margin: 0;
     padding: 20px;
+}
+
+#login {
+    color: rgb(31, 165, 233);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-left: -10px;
 }

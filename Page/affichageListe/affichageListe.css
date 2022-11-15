@@ -33,16 +33,6 @@
     margin-left: 1%;
 }
 
-#block {
-    display: flex;
-    align-items: center;
-    margin-left: 60%;
-}
-#welcome {
-    margin-left: 2%;
-    width: 100vw;
-}
-
 #bloc {
     text-align: center;
 }
@@ -74,7 +64,7 @@
     transition: color 300ms;
     font-size: 19px;
     font-weight: bold;
-  }
+}
   
 #lien:focus {
     color: #f2f2f2;
@@ -100,7 +90,7 @@ img {
     color: #f1f1f2;
     position: relative;
     width: 50%;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 body {
@@ -127,4 +117,12 @@ input::-moz-focus-inner {
   
 input[type="date"]::-webkit-calendar-picker-indicator{
     color: #999;
+}
+
+#login {
+    color: rgb(31, 165, 233);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-left: -10px;
 }

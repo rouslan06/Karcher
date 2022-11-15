@@ -23,7 +23,7 @@
         <section id="details">
 
             <?php
-                  $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
+                $dbh = new PDO("mysql:dbname=karcher;host=127.0.0.1;port=8889", "root", "root");
                 
                 $dbh->beginTransaction();
 
@@ -39,17 +39,19 @@
                     echo "<section id='bloc'>";
                     echo "<div id='affichage'>";
 
-                    $key = $cle + 1;
+                    $key =  $voiture['id'];
 
                     echo "<div class='left'>";
                     echo "<p>Image non contractuelle</p>";
                     echo "<img src=" . $voiture['image'] . "> <br> <br>";
                     echo "</div>";
 
+
                     echo "<div class='right'>";
                     echo "Marque : " . $voiture['brand'] . "<br> <br>";
                     echo "Dernière offre en date : " . $voiture['price'] . " €" . "<br> <br> <br> <br>";
-                    echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageDetails/affichageDetails.php?id=$key'>VOIR PLUS</a> <br> <br> <br> <br>";
+                    echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageDetails/affichageDetails.php?id=$key'>VOIR PLUS</a> <br> <br> <br>";
+                    echo "<a id='lien' href='http://localhost:8888/karcher/Page/affichageListe/supprimerAnnonce.php?id=$key'>SUPPRIMER ANNONCE</a> <br> <br> <br>";
                     echo "L'enchère prendra fin le : " . $voiture['time_limit'];
                     echo "</div>";
 
@@ -57,7 +59,6 @@
                     echo "</section";
 
                 }
-
             ?>
         </section>
     </body>
