@@ -27,7 +27,7 @@
                     <div class="textunder">Bienvenue chez Karcher !<br> La paletforme N°1 des enchères de voitures.</div>
                 </div>
                 <div class="right">
-                    <div class="form">
+                    <form method='post' action='product.php' class="form">
                         <div class="formLine1"> 
                             <div>
                                 <label for="image">Image</label>
@@ -61,7 +61,7 @@
                             </div> 
                         </div>
                         <div class="boutonSubmit"><button type="submit" id="submit">Déposer</button></div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
