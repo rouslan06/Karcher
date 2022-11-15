@@ -46,7 +46,6 @@
                     echo "<img src=" . $voiture['image'] . "> <br> <br>";
                     echo "</div>";
 
-
                     echo "<div class='right'>";
                     echo "Marque : " . $voiture['brand'] . "<br> <br>";
                     echo "Dernière offre en date : " . $voiture['price'] . " €" . "<br> <br> <br> <br>";

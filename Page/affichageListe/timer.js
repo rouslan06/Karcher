@@ -1,6 +1,6 @@
 function timer() { 
 
-    const departHeures = document.getElementById("heure");
+    const departHeures = 1;
     let temps = departHeures * 3600;
 
     const timerElement = document.getElementById("timer");
