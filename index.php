@@ -53,7 +53,7 @@
                             </div>
                             <div> 
                             <label for="time_limit">Time limit</label>
-                            <input id="heure" class="time_limit" placeholder="Expiration de l'annonce" required />
+                            <input id="heure" class="time_limit" placeholder="Expiration de l'annonce" value="1" required />
                             </div>
                             <div> 
                             <label for="price">Price</label>
@@ -65,6 +65,6 @@
                 </div>
             </div>
         </div>
-        <script src="timer.js"></script>
+        <script src="/Page/affichageListe/timer.js"></script>
     </body>
 </html>

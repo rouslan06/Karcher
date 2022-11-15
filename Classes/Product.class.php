@@ -9,17 +9,15 @@ class Product{
   protected string $brand;
   protected string $description;
   protected int $year;
-  protected string $time_limit;
   protected float $price;
   
 
-  public function  __construct($image,$model,$brand,$description,$year,$time_limit,$price){
+  public function  __construct($image,$model,$brand,$description,$year,$price){
       $this->image = $image;
       $this->model = $model;
       $this->brand = $brand;
       $this->description = $description;
       $this->year = $year;
-      $this->time_limit =$time_limit;
       $this->price = $price;
   }
 
@@ -85,17 +83,6 @@ class Product{
     }
   }
 
-  public function getTimeLimit()
-  {
-    return $this->time_limit;
-  }
-
-  public function setTimeLimit($time_limit)
-  {
-    if ($time_limit != "") {
-      $this->time_limit = $time_limit;
-    }
-  }
 
   public function getPrice()
   {

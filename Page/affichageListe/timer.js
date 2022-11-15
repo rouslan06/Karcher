@@ -1,19 +1,19 @@
 function timer() { 
 
-    const departHeures = document.querySelector("heure");
-    let temps = departHeures * 3600
+    const departHeures = document.getElementById("heure");
+    let temps = departHeures * 3600;
 
-    const timerElement = document.getElementById("timer")
+    const timerElement = document.getElementById("timer");
 
     setInterval(() => {
-    let minutes = parseInt(temps / 60, 10)
-    let secondes = parseInt(temps % 60, 10)
+    let minutes = parseInt(temps / 60, 10);
+    let secondes = parseInt(temps % 60, 10);
 
-    minutes = minutes < 10 ? "0" + minutes : minutes
-    secondes = secondes < 10 ? "0" + secondes : secondes
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    secondes = secondes < 10 ? "0" + secondes : secondes;
 
-    timerElement.innerText = `${minutes}:${secondes}`
-    temps = temps <= 0 ? 0 : temps - 1
+    timerElement.innerText = `${minutes}:${secondes}`;
+    temps = temps <= 0 ? 0 : temps - 1;
     }, 1000)
 }
 

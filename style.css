@@ -1,8 +1,8 @@
 #menu {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
-  height: 30px;
-  padding: 10px;
+  height: 20%;
+  padding: 1%;
   border-radius: 5px;
 }
 
@@ -36,7 +36,7 @@ top:1px;
 #block {
   display: flex;
   align-items: center;
-  margin-left: 60%;
+  margin-left: 55%;
 }
 #welcome {
   margin-left: 2%;
@@ -61,7 +61,7 @@ body {
   padding: 20px;
 }
 .page {
-  background: #e2e2e5;
+  
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -91,7 +91,7 @@ body {
   }
 }
 .left {
-  background: white;
+  background: #e2e2e5;
   height: calc(100% - 40px);
   top: 20px;
   position: relative;
@@ -204,9 +204,6 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   font-weight: bold;
 }
 
-#submit:focus {
-  color: #f2f2f2;
-}
 
 #submit:active {
   color: #d0d0d2;
